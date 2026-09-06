@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio website" />
+    <meta name="theme-color" content="#0a0a0b" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Portfolio" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#work">Skip to projects</a>
+    <div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
+    <header class="topbar shell">
+      <a class="identity" href="#home" aria-label="Portfolio home"><strong data-name>Your Name</strong><span data-role>Designer & developer</span></a>
+      <nav class="nav-pill" aria-label="Primary navigation"><a class="is-active" href="#work">Work</a><a href="#info">Info</a></nav>
+      <div class="top-actions"><a class="resume-nav" data-resume href="assets/resume.pdf" download>Resume <span aria-hidden="true">↓</span></a><a class="contact-icon" data-email href="mailto:hello@example.com" aria-label="Email me">@</a></div>
+    </header>
+    <main id="home" class="shell">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="window reveal">
+          <div class="window-bar" aria-hidden="true"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><span class="window-plus">+</span></div>
+          <div class="window-content">
+            <p class="hero-kicker">Independent creative <span>✦</span></p>
+            <h1 id="hero-title" data-headline>I make products, brands <i>&amp; experiences.</i></h1>
+            <p class="intro" data-intro>I’m a multidisciplinary designer and developer creating thoughtful digital work for people with ideas worth sharing.</p>
+            <a class="scroll-cue" href="#work"><span>Explore selected work</span><b aria-hidden="true">↓</b></a>
+          </div><div class="hero-grid" aria-hidden="true"></div>
+        </div>
+      </section>
+      <section id="work" class="work-section" aria-labelledby="work-title">
+        <div class="section-label reveal"><p>Selected work</p><span data-work-year>2026</span></div>
+        <h2 id="work-title" class="sr-only">Selected work</h2><div class="project-list" data-projects></div>
+      </section>
+      <section id="info" class="about-section reveal" aria-labelledby="info-title">
+        <div class="about-number">(INFO)</div>
+        <div class="about-main"><h2 id="info-title" class="about-lead" data-about>I care about the quiet details that make digital work feel human. I pair clear thinking with a strong visual point of view, from first idea to final interaction.</h2><div class="about-lower"><figure class="profile-portrait"><img src="assets/fardeen-shah-portrait.png" alt="Portrait of Fardeen Shah" width="1322" height="1190" /><figcaption>Fardeen Shah <span>— 2026</span></figcaption></figure><div class="about-meta"><p data-location>Based in Dhaka, Bangladesh.<br />Working globally.</p><a class="round-link" data-email href="mailto:hello@example.com">Let’s talk <span aria-hidden="true">↗</span></a></div></div></div>
+      </section>
+      <section class="info-details reveal" aria-label="Professional information">
+        <div class="info-detail-label">Current status</div>
+        <div class="info-detail-content"><p class="status-line"><span class="status-dot" aria-hidden="true"></span><span data-availability>Available for selected freelance projects</span></p><p class="info-summary" data-info-summary>I work with founders, agencies, and ambitious teams on brands, products, and digital experiences.</p><div class="info-actions"><a class="email-link" data-email href="mailto:hello@example.com"><span data-email-text>hello@example.com</span> <b aria-hidden="true">↗</b></a><a class="resume-download" data-resume href="assets/resume.pdf" download><span>Download résumé</span><b aria-hidden="true">↓</b></a></div></div>
+      </section>
+      <section class="experience reveal" aria-labelledby="experience-title"><div class="experience-label"><p id="experience-title">Experience</p><span>Selected roles</span></div><ol data-experience></ol></section>
+      <section class="capabilities reveal" aria-label="Capabilities"><p>What I do</p><ul data-services></ul></section>
+    </main>
+    <footer class="footer shell"><div><p>© <span data-year></span> <span data-name>Your Name</span></p><p class="footer-note">Made slowly, with care.</p></div><div class="footer-links" data-socials></div></footer>
+    <noscript><p class="noscript">Please enable JavaScript to load portfolio content.</p></noscript><script src="app.js"></script>
+  </body>
+</html>
